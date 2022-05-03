@@ -1,13 +1,4 @@
 ﻿source,target,value
-Petroleum,Transportation,170
-Petroleum,Industrial,21.2
-Petroleum,Commercial,6.4
-Petroleum,Residential,5 
-Petroleum,Electricity Generation,66
-Coal,Electricity Generation,14.2
-Natural Gas,Industrial,1
-Natural Gas,Commercial,2.5
-Natural Gas,Residential,5.5
 Biomass,Transportation,3.8
 Biomass,Industrial,1.8
 Biomass,Commercial,3.6
@@ -20,6 +11,15 @@ Solar,Industrial,3
 Solar,Commercial,3.9
 Solar,Residential,8
 Solar,Electricity Generation,2.4
+Petroleum,Transportation,170
+Petroleum,Industrial,21.2
+Petroleum,Commercial,6.4
+Petroleum,Residential,5 
+Petroleum,Electricity Generation,66
+Coal,Electricity Generation,14.2
+Natural Gas,Industrial,1
+Natural Gas,Commercial,2.5
+Natural Gas,Residential,5.5
 Electricity Generation,Industrial,12.4
 Electricity Generation,Commercial,10.4
 Electricity Generation,Residential,9.4
