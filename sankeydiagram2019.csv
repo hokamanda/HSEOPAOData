@@ -2,21 +2,21 @@
 Petroleum,Transportation,170
 Petroleum,Industrial,21.2
 Petroleum,Commercial,6.4
-Petroleum,Residential,0.5
+Petroleum,Residential,5 
 Petroleum,Electricity Generation,66
 Coal,Electricity Generation,14.2
-Natural Gas,Industrial,0.09
+Natural Gas,Industrial,1
 Natural Gas,Commercial,2.5
-Natural Gas,Residential,0.55
+Natural Gas,Residential,5.5
 Biomass,Transportation,3.8
-Biomass,Industrial,0.18
+Biomass,Industrial,1.8
 Biomass,Commercial,3.6
-Biomass,Residential,0.02
+Biomass,Residential,0.2
 Geothermal,Commercial,0.01
 Wind,Electricity Generation,4.7
-Hydro,Industrial,0.53
+Hydro,Industrial,5.3
 Hydro,Electricity Generation,0.32
-Solar,Industrial,0.03
+Solar,Industrial,3
 Solar,Commercial,3.9
 Solar,Residential,8
 Solar,Electricity Generation,2.4
