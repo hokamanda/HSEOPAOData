@@ -1,0 +1,75 @@
+<html>
+<body>
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div id="sankey_multiple" style="width: 900px; height: 300px;"></div>
+
+<script type="text/javascript">
+  google.charts.load("current", {packages:["sankey"]});
+  google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Weight');
+    data.addRows([
+       [ 'Biomass', 'Transportation', 3.8 ],
+       [ 'Biomass', 'Industrial', 1.8 ],
+       [ 'Biomass', 'Commercial', 3.6 ],
+       [ 'Wind', 'Electricity Generation', 4.7 ],
+       [ 'Geothermal', 'Commercial', 0.01 ],
+       [ 'Hydro', 'Industrial', 5.3 ],
+       [ 'Hydro', 'Electricity Generation', 0.32 ],
+       [ 'Solar', 'Commercial', 3.9 ],
+       [ 'Solar', 'Residential', 8 ],
+       [ 'Solar', 'Electricity Generation', 2.4 ],
+       [ 'Petroleum', 'Transportation', 170 ],
+       [ 'Petroleum', 'Industrial', 21.2 ],
+       [ 'Petroleum', 'Commercial', 6.4 ],
+       [ 'Petroleum', 'Electricity Generation', 66 ],
+       [ 'Coal', 'Electricity Generation', 14.2 ],
+       [ 'Natural Gas', 'Industrial', 1 ],
+       [ 'Natural Gas', 'Commercial', 2.5 ],
+       [ 'Natural Gas', 'Residential', 5.5 ],
+       [ 'Electricity Generation', 'Industrial', 12.4 ],
+       [ 'Electricity Generation', 'Commercial', 10.4 ],
+       [ 'Electricity Generation', 'Residential', 9.4 ],
+       [ 'Electricity Generation', 'Rejected Energy', 56.7 ],
+       [ 'Residential', 'Rejected Energy', 6.3 ],
+       [ 'Residential', 'Energy Services', 11.7 ],
+       [ 'Commercial', 'Rejected Energy', 8.6 ],
+       [ 'Commercial', 'Energy Services', 16 ],
+       [ 'Industrial', 'Rejected Energy', 17.5 ],
+       [ 'Industrial', 'Energy Services', 16.8 ],
+       [ 'Transportation', 'Rejected Energy', 137 ],
+       [ 'Transportation', 'Energy Services', 36.5 ]
+
+    ]);
+
+    // Set chart options
+    var colors = ['#a6cee3', '#b2df8a', '#fb9a99', '#fdbf6f',
+                  '#cab2d6', '#ffff99', '#1f78b4', '#33a02c'];
+
+    var options = {
+      //height: 400,
+      width: 600,
+      sankey: {
+        node: {
+          colors: colors
+        },
+        interactivity: true,
+        iterations: 200,
+        link: {
+          colorMode: 'gradient',
+          colors: colors
+        }
+      }
+    };
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+    chart.draw(data, options);
+   }
+</script>
+</body>
+</html>
