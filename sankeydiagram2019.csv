@@ -11,7 +11,11 @@ Solar,Industrial,3
 Solar,Commercial,3.9
 Solar,Residential,8
 Solar,Electricity Generation,2.4
-Petroleum,Transportation,170
+Petroleum,Transportation,70
+Petroleum,Transportation,25
+Petroleum,Transportation,25
+Petroleum,Transportation,25
+Petroleum,Transportation,25
 Petroleum,Industrial,21.2
 Petroleum,Commercial,6.4
 Petroleum,Residential,5 
